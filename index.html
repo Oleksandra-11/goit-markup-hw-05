@@ -51,7 +51,7 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
+            <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -86,15 +86,24 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="features-img list">
                     <li class="feature-img">
-                        <img src="./img/image.jpg" alt="крупний план робочего места программиста" width="370">
+                        <div class="features2-wrap">
+                        <img src="./img/image.jpg" alt="крупний план робочего места программиста" width="370" class="card-imagine">
+                        <p class="features2-text">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="feature-img">
+                        <div class="features2-wrap">
                         <img src="./img/image-2.jpg"
-                                alt="веб-дизайнер разрабатывает интерфейс для мобильного приложения" width="370">
+                                alt="веб-дизайнер разрабатывает интерфейс для мобильного приложения" width="370" class="card-imagine">
+                                <p class="features2-text">Мобильные приложения</p>
+                            </div>
                     </li>
                     <li class="feature-img">
+                        <div class="features2-wrap">
                         <img src="./img/image-3.jpg"
-                                alt="веб-дизайнер с планшетом с изображением рабочей палитры цветов" width="370">
+                                alt="веб-дизайнер с планшетом с изображением рабочей палитры цветов" width="370" class="card-imagine">
+                                <p class="features2-text">Дизайнерские решения</p>
+                            </div>
                     </li>
                 </ul>
             </div>
@@ -259,6 +268,7 @@
             </ul>
         </div>
         </section>
+        
         <section class="clients">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
@@ -356,14 +366,18 @@
                     </ul>
                 </div>
              </div>
-             <div class="backdrop is-hidden">
+
+             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button class="button-modal">
+                    <button class="button-modal" data-modal-close>
+                        <svg class="button-modal-close" width="11" height="11">
+                            <use href="./img/button-modal-close.svg"></use>
+                        </svg>
                     </button>
                 </div>
              </div>
         </footer>
-
+     <script src="./js/modal.js"></script>
 </body>
 
 </html>
